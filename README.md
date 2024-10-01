@@ -73,3 +73,57 @@ Explicação do arquivo main.c
 
     Função Principal
         Configura o ambiente para português e chama a função menu() para iniciar a interação com o usuário..
+Como Executar com CMake
+
+Para compilar e executar o projeto usando CMake, siga os passos abaixo:
+
+    Instale o CMake
+        Certifique-se de ter o CMake instalado no seu sistema. Você pode baixar a versão mais recente do site oficial do CMake.
+
+    Estrutura do Projeto
+        Certifique-se de que sua estrutura de diretórios está configurada corretamente:
+
+        bash
+
+    /seu_projeto
+    ├── CMakeLists.txt
+    ├── main.c
+    ├── procedure.c
+    ├── tela.c
+    ├── procedure.h
+    └── tela.h
+
+Crie um Diretório de Build
+
+    No terminal, navegue até o diretório do seu projeto e crie um diretório para os arquivos de build:
+
+    bash
+
+    mkdir build
+    cd build
+
+Gere os Arquivos de Makefile
+
+    Execute o comando CMake para gerar os arquivos de Makefile:
+
+    bash
+
+    cmake ..
+
+Compile o Projeto
+
+    Após a geração dos arquivos de Makefile, compile o projeto:
+
+    bash
+
+    make
+
+Execute o Programa
+
+    Após a compilação, você pode executar o programa com o seguinte comando:
+
+    bash
+
+        ./seu_programa
+
+Substitua seu_programa pelo nome do executável gerado, que geralmente será o nome do diretório do projeto.
